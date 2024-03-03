@@ -73,9 +73,35 @@ fs.readFile(`file.text`, `utf8`, (err, data) => {
     }
     console.log(data)
 })
-
 //if run dev, will be read; 
 
 //Write text into file (writeToFile())
+function writeToFile() {
+    fs.writeFile("file.txt", "some text", (err) => {
+        if (err) {
+            console.log(err); 
+            return
+        }
+        console.log('text would be written. ')
+    })
+    }
+
+    writeToFile(); 
 
 //Create a folder
+        fs.mkdir("someFolder", (err) => {
+            if (err) {
+                console.log(err); 
+                return
+            }
+            console.log('text would be directory was created. ')
+        }); 
+
+//Check if file exist 
+fs.access('file.text', fs.constants.F_OK, (err) => {
+    if (err) {
+        console.log(err); 
+        return
+    }
+    console.log('file exist! ')
+});   
