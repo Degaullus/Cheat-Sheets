@@ -32,7 +32,7 @@ console.log(myPc);
 //require() --) allows us  to import modules
 //__direname --) shows the current directory path as a string
 //__filename --) tells the current directory path + filename beeing executate. 
-//modules.exports --) how to export sthing from a file (like export default in react)
+//modules.exports --) how to export thing from a file (like export default in react)
 // so to import smthing, use require. To export, use module.export. 
 
         //what is a module ? every JS files IS A MODULE. 
@@ -108,7 +108,7 @@ fs.readFile('file.txt', 'utf8', (err, data) => { //call back has to start with e
 
 
 //WRITE A TEXT INTO A FILE.
-function wroiteToFile() {
+function writeToFile() {
 
 fs.writeFile("file.txt", "some text", (err) => {
     if (err) {
@@ -121,7 +121,7 @@ fs.writeFile("file.txt", "some text", (err) => {
 
 writeToFile(); 
 
-//make your ruyn dev. We created a text inside a text !!!!! 
+//make your run dev. We created a text inside a text !!!!! 
 
 //////////////
 //CREATE A FOLDER
