@@ -41,7 +41,7 @@ const server = http.createServer((req.res) => {
 })
 
 //in your terminal : you get the infos you are looking for. like the method, and the header (connections, ect). 
-//you can add acions
+//you can add actions
 
 
 const server = http.createServer((req.res) => {

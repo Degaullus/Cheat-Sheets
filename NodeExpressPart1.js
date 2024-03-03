@@ -1,8 +1,10 @@
 //creating new project/Go where you need
 npm init -yeld  //create a new json package. 
-npm install -g nodemon 
+npm install nodemon -D 
 
 //create your server file  
+touch indexedDB.js 
+//or
 touch server.js .env .gitignore
 
 const os = require("node:os")
